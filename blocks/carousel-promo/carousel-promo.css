@@ -1,0 +1,168 @@
+.carousel-promo-container .carousel-promo-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.carousel-promo {
+  position: relative;
+}
+
+.carousel-promo .carousel-promo-slides-container {
+  position: relative;
+}
+
+.carousel-promo .carousel-promo-slides,
+.carousel-promo .carousel-promo-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-promo .carousel-promo-slides {
+  display: flex;
+  overflow: scroll clip;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-promo .carousel-promo-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-promo .carousel-promo-slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* inline images inside the text panel (e.g. a game logo) */
+.carousel-promo .carousel-promo-slide-content picture,
+.carousel-promo .carousel-promo-slide-content img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* image-only slides: the (optionally linked) banner image is the slide */
+.carousel-promo .carousel-promo-slide-image {
+  width: 100%;
+  line-height: 0;
+}
+
+.carousel-promo .carousel-promo-slide-image p {
+  margin: 0;
+}
+
+.carousel-promo .carousel-promo-slide-image a {
+  display: block;
+}
+
+.carousel-promo .carousel-promo-slide-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* slides with text: the image becomes a full-bleed background */
+.carousel-promo .carousel-promo-slide-has-content .carousel-promo-slide-image {
+  position: absolute;
+  inset: 0;
+}
+
+.carousel-promo .carousel-promo-slide-has-content .carousel-promo-slide-image img {
+  height: 100%;
+}
+
+.carousel-promo .carousel-promo-slide-content {
+  position: relative;
+  z-index: 1;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.carousel-promo .carousel-promo-slide-content p {
+  margin: 0 0 8px;
+}
+
+/* control bar below the slides */
+.carousel-promo .carousel-promo-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+.carousel-promo .carousel-promo-controls nav {
+  flex: 1;
+}
+
+.carousel-promo .carousel-promo-slide-indicators {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  line-height: 0;
+}
+
+.carousel-promo .carousel-promo-slide-indicator button {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: currentcolor;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.carousel-promo .carousel-promo-slide-indicator button:disabled,
+.carousel-promo .carousel-promo-slide-indicator button:hover,
+.carousel-promo .carousel-promo-slide-indicator button:focus-visible {
+  opacity: 1;
+}
+
+.carousel-promo .carousel-promo-prev,
+.carousel-promo .carousel-promo-next {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.carousel-promo .carousel-promo-prev::after,
+.carousel-promo .carousel-promo-next::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: 2px solid currentcolor;
+  border-bottom: 0;
+  border-left: 0;
+  transform: translate(-30%, -50%) rotate(-135deg);
+}
+
+.carousel-promo .carousel-promo-next::after {
+  transform: translate(-70%, -50%) rotate(45deg);
+}
+
+@media (width >= 900px) {
+  .carousel-promo .carousel-promo-slide-content {
+    padding: 48px;
+  }
+}

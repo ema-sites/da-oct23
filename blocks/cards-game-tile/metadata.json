@@ -1,0 +1,32 @@
+{
+  "variantName": "cards-game-tile",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Fixed-width container: left two-thirds is a 2-column grid of white game tiles with drop shadow (image top, optional orange 'NEW' corner flag or jackpot prize-bar overlay, grey title, description, green next-draw/jackpot text, full-width blue pill arrow button); right third is a stacked rail of 4 linked promo images.",
+  "contentPattern": "Look-alike tiles that flow and wrap in a 2-column grid, each linking to a game/promo detail page; editorial item count varies, so Cards. 2-column shadowed game tiles with image overlay flag, draw info and full-width pill CTA; no existing cards variant",
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Featured games and promotions grid (8 tiles) in a split section beside a right rail of promo images.",
+  "reuseGuidance": "Use for shadowed game/promo tiles in a 2-column grid. One row per tile: cell 1 = tile image (optionally linked); cell 2 = optional short flag paragraph (e.g. NEW) before the title, heading, description paragraph, optional next-draw/jackpot paragraphs, CTA link as the last paragraph.",
+  "blockContent": {
+    "structure": [
+      {
+        "row": "header",
+        "cells": [
+          "Cards (variant)"
+        ]
+      },
+      {
+        "row": "card (repeat)",
+        "cells": [
+          "Image (tile image)",
+          "Text: H3 title, description paragraph (may include inline 'Read more' link), optional next-draw date and jackpot paragraphs, CTA link (button)"
+        ]
+      }
+    ],
+    "usage": [],
+    "notes": "The orange 'NEW' corner flag and the jackpot prize-bar overlay are overlays on the tile image; carry jackpot values as paragraphs and the flag as an optional short paragraph.",
+    "description": "8 game tiles (LOTTO MAX, LOTTO 649, Proline and Proline Stadium, Get a $20 bonus!, Meet the Megas, Magic Winnings Royale, Ultimate Fire Link Triple Desert Nights, Live Casino Has Arrived!) each linking to a game/promo detail page"
+  },
+  "sourceUrl": "https://www.alc.ca/content/alc/en.html"
+}

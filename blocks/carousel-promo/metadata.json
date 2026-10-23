@@ -1,0 +1,33 @@
+{
+  "variantName": "carousel-promo",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-width rotating promo carousel; each slide is a full-bleed photo/graphic banner linking to a promo, first slide is a live LOTTO 6/49 jackpot draw panel over an image. Prev/next arrows and dot pagination on a beige (#f5ede6) control bar below the slides.",
+  "contentPattern": "Interactive rotating component with arrows and dot pagination; each slide is an image with optional text/CTA. Photo backgrounds belong to the block, so the section is not colored. Full-bleed promo banner slides with arrows and dot bar below; no existing carousel variant in blocks/",
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Home page hero promo rotator: a LOTTO 6/49 next-draw jackpot slide (background image + logo, draw date, jackpot paragraphs, CTA) followed by image-only promo banner slides whose image links to the promo.",
+  "reuseGuidance": "Use for full-width rotating promo banners with a control bar (prev, dots, next) below the slides. One row per slide: cell 1 = image (link it for image-only slides), cell 2 = optional text/CTA. Leave cell 2 empty for banner-only slides.",
+  "blockContent": {
+    "structure": [
+      {
+        "row": "header",
+        "cells": [
+          "Carousel (variant)"
+        ]
+      },
+      {
+        "row": "slide (repeat)",
+        "cells": [
+          "Image (mandatory): slide background/banner image; for image-only slides, link the image to the promo URL",
+          "Text (optional): title as heading, description/additional paragraphs, CTA link"
+        ]
+      }
+    ],
+    "usage": [
+      "Slide 1: cell1 = draw background image; cell2 = game logo image, 'Next Draw: Sat. 24 Oct. 2026', '$5M CLASSIC JACKPOT +', '$28 000 000', 'GOLD BALL JACKPOT', 'OR THE GUARANTEED $1M' as paragraphs, CTA 'Get your ticket' (game-configurator lotto-649 page). Slides 2-5: cell1 = banner image linked to the promo URL; cell2 empty."
+    ],
+    "description": "5 slides: (1) LOTTO 6/49 next-draw jackpot panel (background image, game logo, 'Next Draw: Sat. 24 Oct. 2026', '$5M CLASSIC JACKPOT +', '$28 000 000', 'GOLD BALL JACKPOT OR THE GUARANTEED $1M', CTA 'Get your ticket'); (2-5) linked promo banner images ($20 Bonus, Mega 360, PlayWise player tools, Proline fall multisport)"
+  },
+  "sourceUrl": "https://www.alc.ca/content/alc/en.html"
+}

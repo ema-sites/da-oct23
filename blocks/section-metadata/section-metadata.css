@@ -1,0 +1,4 @@
+/* section metadata is configuration only and is removed on decoration */
+.section-metadata {
+  display: none;
+}

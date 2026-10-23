@@ -1,0 +1,33 @@
+{
+  "variantName": "carousel-winners",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Slick carousel with a light-blue illustrated background image (province map) per slide; circular winner portrait at left, winner name (H3, white) and location, 'See all winners' arrow button, game logo with red 'Winner' ribbon and white boxed prize-amount digits at right; thin outlined chevron arrows and small dots.",
+  "contentPattern": "Interactive slider of winner slides (arrows, dots) with an image per slide plus name, location, CTA and prize amount; prize amount and location stay paragraphs, not headings. Winner spotlight slides: circular portrait, name/location, CTA, game logo ribbon and boxed prize digits over an illustrated background; no existing variant",
+  "options": [],
+  "memberVariantIds": [],
+  "usage": "Recent winners spotlight slider on the home page.",
+  "reuseGuidance": "Use for winner/testimonial spotlight slides over an illustrated background. One row per slide: cell 1 = background image; cell 2 = portrait image, heading (winner name), location paragraph, CTA link, game logo image, ribbon label paragraph (e.g. Winner), prize amount paragraph (e.g. $500 000). The second image in cell 2 starts the prize group.",
+  "blockContent": {
+    "structure": [
+      {
+        "row": "header",
+        "cells": [
+          "Carousel (variant)"
+        ]
+      },
+      {
+        "row": "slide (repeat)",
+        "cells": [
+          "Image (mandatory): slide background/banner image; for image-only slides, link the image to the promo URL",
+          "Text (optional): title as heading, description/additional paragraphs, CTA link"
+        ]
+      }
+    ],
+    "usage": [
+      "Each slide: cell1 = background illustration image; cell2 = portrait image, H3 winner name, location paragraph, CTA 'See all winners', game logo image, 'Winner' paragraph, prize amount paragraph (e.g. '$500 000')."
+    ],
+    "description": "4 winner slides: background image, portrait, winner name, city/province, 'See all winners' CTA, game logo + 'Winner' ribbon, prize amount (e.g. $500 000, $1 000 000, $2 000 000)"
+  },
+  "sourceUrl": "https://www.alc.ca/content/alc/en.html"
+}

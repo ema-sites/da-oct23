@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.alc.ca/content/alc/en.html",
+  "path": "content/alc/en",
+  "timestamp": "2026-10-23T19:02:50.426Z",
+  "title": "Atlantic Lottery | Buy Tickets Online, Winning Numbers & More",
+  "template": "alc",
+  "blocks": [
+    "carousel-promo",
+    "carousel-promo",
+    "carousel-winners",
+    "carousel-winners",
+    "cards-game-tile"
+  ]
+}

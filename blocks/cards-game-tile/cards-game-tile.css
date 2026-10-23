@@ -1,0 +1,82 @@
+.cards-game-tile > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-game-tile .cards-game-tile-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 25%);
+}
+
+.cards-game-tile .cards-game-tile-image {
+  position: relative;
+  line-height: 0;
+}
+
+.cards-game-tile .cards-game-tile-image p {
+  margin: 0;
+}
+
+.cards-game-tile .cards-game-tile-image a {
+  display: block;
+}
+
+.cards-game-tile .cards-game-tile-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+/* corner flag overlay, e.g. "NEW" */
+.cards-game-tile .cards-game-tile-image .cards-game-tile-flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cards-game-tile .cards-game-tile-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 24px 24px;
+}
+
+.cards-game-tile .cards-game-tile-body > * {
+  margin: 0;
+}
+
+.cards-game-tile .cards-game-tile-draw + .cards-game-tile-draw {
+  margin-top: -8px;
+}
+
+.cards-game-tile .cards-game-tile-cta {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.cards-game-tile .cards-game-tile-cta a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (width >= 600px) {
+  .cards-game-tile > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
