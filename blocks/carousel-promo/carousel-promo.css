@@ -49,6 +49,12 @@
   height: auto;
 }
 
+/* game logos are supplied at 2x; show them at the source's 67px height */
+.carousel-promo .carousel-promo-slide-content img {
+  width: auto;
+  max-height: 67px;
+}
+
 /* image-only slides: the (optionally linked) banner image is the slide */
 .carousel-promo .carousel-promo-slide-image {
   width: 100%;

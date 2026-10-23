@@ -26,6 +26,16 @@ async function fetchNavFragment() {
     }).join(', ');
     source.setAttribute('srcset', srcset);
   });
+  // the published fragment wraps list-item links/media in <p>; unwrap so
+  // local and production markup share one shape (li > a, li > picture)
+  doc.querySelectorAll('li > p').forEach((p) => {
+    const [only] = p.children;
+    const hasText = [...p.childNodes]
+      .some((n) => n.nodeType === Node.TEXT_NODE && n.textContent.trim());
+    if (p.children.length === 1 && !hasText && ['A', 'PICTURE', 'IMG'].includes(only.tagName)) {
+      p.replaceWith(only);
+    }
+  });
   return doc.body;
 }
 
